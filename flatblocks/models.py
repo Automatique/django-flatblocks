@@ -19,6 +19,8 @@ class FlatBlock(models.Model):
     content = models.TextField(verbose_name=_('Content'), blank=True,
                 null=True)
 
+    header.allow_tags = True
+
     def __unicode__(self):
         return u"%s" % (self.slug,)
 
