@@ -14,4 +14,3 @@ class FlatBlockAdminForm(forms.ModelForm):
 
     class Meta:
         model = FlatBlock
-        exclude = ('slug', )
