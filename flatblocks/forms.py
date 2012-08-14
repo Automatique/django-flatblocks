@@ -9,8 +9,8 @@ class FlatBlockForm(forms.ModelForm):
         exclude = ('slug', )
 
 class FlatBlockAdminForm(forms.ModelForm):
-    header = forms.CharField(widget=TinyMCE(attrs={'cols': 80, 'rows': 2}))
-    content = forms.CharField(widget=TinyMCE(attrs={'cols': 80, 'rows': 16}))
+    header = forms.CharField(widget=TinyMCE(attrs={'cols': 80, 'rows': 2}), required=False)
+    content = forms.CharField(widget=TinyMCE(attrs={'cols': 80, 'rows': 16}), required=False)
 
     class Meta:
         model = FlatBlock
