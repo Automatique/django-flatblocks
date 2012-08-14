@@ -4,7 +4,6 @@ from django.core.cache import cache
 
 from flatblocks.settings import CACHE_PREFIX
 
-
 class FlatBlock(models.Model):
     """
     Think of a flatblock as a flatpage but for just part of a site. It's

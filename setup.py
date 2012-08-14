@@ -30,5 +30,5 @@ setup(
     packages = find_packages(exclude=['ez_setup', 'test_project']),
     include_package_data = True,
     zip_safe = False,
-    install_requires = ['south', 'django-tinymce'],
+    install_requires = ['South', 'django-tinymce'],
 )
